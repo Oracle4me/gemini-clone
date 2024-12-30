@@ -2,15 +2,17 @@
 
 Gemini Clone adalah aplikasi web yang terinspirasi oleh platform Gemini sebuah AI yang dapat membantu kita untuk menyelesaikan masalah. Dibangun menggunakan **React.js**, **JavaScript**, **Tailwind CSS**, dan **API dari GEMINI**, proyek ini mereplikasi fitur-fitur utama dari platform asli, memungkinkan pengguna untuk menulisakan pesan untuk ditanyakan kepada AI.
 
+Untuk sekarang masih cuma bisa text only kedepanya akan ditambahkan fitur audio, gambar (Project masih berjalan)
+
 ## Hasil Demo
 Link demo untuk GEMINI Clone : [Gemini Clone di Vercel](https://gemini-clone-zeta-seven.vercel.app/)
 
 
-![Demo](src/assets/demo.png)
+![Demo](public/demo.png)
 
 ## Fitur
 
-- **Percakapan Real-Time:** Menampilkan harga cryptocurrency secara langsung menggunakan API GEMINI.
+- **Percakapan Real-Time:** Menampilkan hasil langsung dari API GEMINI.
 - **Desain Responsif:** Dioptimalkan untuk tampilan desktop dan seluler dengan Tailwind CSS.
 - **Antarmuka Pengguna Ramah:** Desain intuitif yang terinspirasi dari UI Gemini.
 
