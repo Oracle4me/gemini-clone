@@ -4,7 +4,9 @@ Gemini Clone adalah aplikasi web yang terinspirasi oleh platform Gemini sebuah A
 
 ## Hasil Demo
 Link demo untuk GEMINI Clone : [Gemini Clone di Vercel](https://gemini-clone-zeta-seven.vercel.app/)
-![Demo](public/demo.png)
+
+
+![Demo](src/assets/demo.png)
 
 ## Fitur
 
