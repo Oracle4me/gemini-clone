@@ -12,7 +12,7 @@ Link demo untuk GEMINI Clone : [Gemini Clone di Vercel](https://gemini-clone-zet
 
 ## Fitur
 
-- **Percakapan Real-Time:** Menampilkan harga cryptocurrency secara langsung menggunakan API GEMINI.
+- **Percakapan Real-Time:** Menampilkan hasil langsung dari API GEMINI.
 - **Desain Responsif:** Dioptimalkan untuk tampilan desktop dan seluler dengan Tailwind CSS.
 - **Antarmuka Pengguna Ramah:** Desain intuitif yang terinspirasi dari UI Gemini.
 
