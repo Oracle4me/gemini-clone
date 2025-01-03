@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import runChat from "../config/gemini";
 
 export const Context = createContext();
@@ -11,7 +11,7 @@ const ContextProvider = (props) => {
   const [loading, setLoading] = useState(false);
   const [resultData, setResultData] = useState("");
 
-  // Delay parameter
+  // Delay parameter typing word
   const delayParam = (index, nextWord) => {
     setTimeout(() => {
       setResultData((prev) => prev + nextWord);
@@ -41,18 +41,18 @@ const ContextProvider = (props) => {
       if (i === 0 || i % 2 !== 1) {
         newResponse += responseArray[i];
       } else {
-        newResponse += "<b>" + responseArray[i] + "</b></br>";
+        newResponse += "<b>" + responseArray[i] + "</b>";
       }
     }
 
-    let newResponse2 = newResponse.split("*").join("</br>");
-    let newResponseArray = newResponse2.split(" ");
+    // let newResponse2 = newResponse.split(" ").join("</br>");
+    let newResponseArray = newResponse.split(" ");
     for (let i = 0; i < newResponseArray.length; i++) {
       const nextWord = newResponseArray[i];
       delayParam(i, nextWord + " ");
     }
 
-    setResultData(response);
+    // setResultData(response);
 
     setLoading(false);
     setInput("");

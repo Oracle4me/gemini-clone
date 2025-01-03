@@ -2,15 +2,22 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Conversation from "./components/conversation";
 import { Sidebar } from "./components/sidebar";
+import { useState } from "react";
 
 function App() {
+  const [showChat, setShowChat] = useState(false);
+
+  const handleNewChat = () => {
+    setShowChat(true);
+  };
+
   return (
     <>
       <div className="flex overflow-hidden">
-        <Sidebar />
-        <div className="w-full h-screen bg-main py-4">
+        <Sidebar onNewChat={handleNewChat} />
+        <div className="w-full h-screen bg-main">
           <Navbar />
-          <Conversation />
+          <Conversation showChat={showChat} />
         </div>
       </div>
     </>

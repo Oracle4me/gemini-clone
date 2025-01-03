@@ -7,7 +7,7 @@ import { TbGridDots } from "react-icons/tb";
 
 const Navbar = () => {
   return (
-    <div className="px-4">
+    <div className="px-4 py-4 ">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2 text-slate-200 hover:bg-slate-200/10 rounded-lg px-2 py-1">
           <h5 className="text-xl font-medium">Gemini</h5>
